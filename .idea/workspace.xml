@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/mingeso/msconfig/MsConfigApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/mingeso/msconfig/MsConfigApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/eureka-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/main/java/com/example/ms_simulation/MsSimulationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/test/java/com/example/ms_simulation/MsSimulationApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicio/config-server",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/ms-simulation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,14 +55,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="MsConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="config-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mingeso.msconfig.MsConfigApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\baeza\OneDrive\Documentos\GitHub\PrestaBancoMicroServicioEntrega\config-data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\baeza\OneDrive\Documentos\GitHub\PrestaBancoMicroServicioEntrega\config-data" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -86,6 +81,7 @@
       <workItem from="1731795353575" duration="3704000" />
       <workItem from="1731812942963" duration="956000" />
       <workItem from="1731815779293" duration="25000" />
+      <workItem from="1731817693822" duration="1330000" />
     </task>
     <servers />
   </component>
