@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config-data/eureka-server.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/main/java/com/example/ms_simulation/MsSimulationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/test/java/com/example/ms_simulation/MsSimulationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eureka_server/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eureka_server/EurekaServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/eureka-server.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/eureka-server.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-simulation/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/ms-simulation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\baeza\OneDrive\Documentos\GitHub\PrestaBancoMicroServicioEntrega\config-data" />
@@ -82,6 +85,9 @@
       <workItem from="1731812942963" duration="956000" />
       <workItem from="1731815779293" duration="25000" />
       <workItem from="1731817693822" duration="1330000" />
+      <workItem from="1731820556667" duration="2665000" />
+      <workItem from="1731910645283" duration="1182000" />
+      <workItem from="1731986101035" duration="2112000" />
     </task>
     <servers />
   </component>

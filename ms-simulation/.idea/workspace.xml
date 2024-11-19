@@ -5,16 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7dd1362-bb4e-4b04-96c2-9e97a92b8bfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../config-data/eureka-server.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/src/main/java/com/example/ms_simulation/MsSimulationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/src/test/java/com/example/ms_simulation/MsSimulationApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +18,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2oxmyoMkjUL1epKobvm7tdDugS9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,7 +33,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/config-data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731819857778</updated>
       <workItem from="1731819858840" duration="688000" />
+      <workItem from="1731823912394" duration="38000" />
     </task>
     <servers />
   </component>
