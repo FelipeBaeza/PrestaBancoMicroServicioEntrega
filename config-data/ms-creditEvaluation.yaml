@@ -1,5 +1,10 @@
 server:
-  port: 8090
+  port: 8092
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms-creditEvaluation
+    username: postgres
+    password: felipeb222
 eureka:
   instance:
     hostname: localhost

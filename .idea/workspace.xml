@@ -5,18 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eureka-server/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eureka_server/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eureka_server/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/gateway-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/ms-clients.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/ms-creditEvaluation.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/ms-creditRequest.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/ms-requestTracking.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-data/ms-totalCosts.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/src/main/java/com/example/ms_clients/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/src/main/java/com/example/ms_clients/entities/ClientEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/src/main/java/com/example/ms_clients/repositories/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/src/main/java/com/example/ms_clients/services/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditEvaluation/src/main/java/com/example/ms_creditEvaluation/controller/CreditEvaluationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditEvaluation/src/main/java/com/example/ms_creditEvaluation/entities/CreditEvaluationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditEvaluation/src/main/java/com/example/ms_creditEvaluation/repositories/CreditEvaluationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditEvaluation/src/main/java/com/example/ms_creditEvaluation/service/CreditEvaluationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/controller/CreditRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/entities/CreditRequestEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/repositories/CreditRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/services/CreditRequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-requestTracking/src/main/java/com/example/ms_requestTracking/controller/CreditRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-requestTracking/src/main/java/com/example/ms_requestTracking/service/CreditRequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-totalCosts/src/main/java/com/example/ms_totalCosts/controller/CreditEvaluationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-totalCosts/src/main/java/com/example/ms_totalCosts/service/CreditEvaluationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/eureka-server.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/eureka-server.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-simulation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/.idea/config-data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-simulation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-simulation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/ms-simulation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/main/java/com/example/ms_simulation/MsSimulationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/ms-simulation/src/test/java/com/example/ms_simulation/MsSimulationApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +74,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/config-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\baeza\OneDrive\Documentos\GitHub\PrestaBancoMicroServicioEntrega\config-data" />
@@ -87,7 +121,8 @@
       <workItem from="1731817693822" duration="1330000" />
       <workItem from="1731820556667" duration="2665000" />
       <workItem from="1731910645283" duration="1182000" />
-      <workItem from="1731986101035" duration="2112000" />
+      <workItem from="1731986101035" duration="2129000" />
+      <workItem from="1732037220860" duration="8993000" />
     </task>
     <servers />
   </component>
