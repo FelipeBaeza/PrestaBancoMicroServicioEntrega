@@ -2,7 +2,7 @@ server:
   port: 8091
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ms-clients
+    url: jdbc:postgresql://localhost:5435/ms-clients
     username: postgres
     password: felipeb222
 eureka:

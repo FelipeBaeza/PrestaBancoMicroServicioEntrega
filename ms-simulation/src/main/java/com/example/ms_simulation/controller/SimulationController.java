@@ -24,7 +24,7 @@ public class SimulationController {
      * @param term the term of the loan
      * @return the monthly payment of the loan
      */
-    @GetMapping("/simulation/{amount}/{interestRate}/{term}")
+    @GetMapping("/calculate/{amount}/{interestRate}/{term}")
     public ResponseEntity<?> simulation(@PathVariable int amount, @PathVariable double interestRate, @PathVariable int term) {
         return ResponseEntity.ok(clientService.simulation(amount, interestRate, term));
     }
