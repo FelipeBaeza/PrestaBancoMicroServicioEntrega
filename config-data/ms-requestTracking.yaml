@@ -1,5 +1,10 @@
 server:
   port: 8094
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5435/ms-requestTracking
+    username: postgres
+    password: felipeb222
 eureka:
   instance:
     hostname: localhost
