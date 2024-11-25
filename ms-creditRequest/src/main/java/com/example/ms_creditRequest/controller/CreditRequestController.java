@@ -189,6 +189,10 @@ public class CreditRequestController {
     }
 
 
+    @GetMapping("/findRequestById/{id}")
+    public ResponseEntity<?> findRequestById(@PathVariable Long id) {
+        return ResponseEntity.ok(creditRequestService.findRequestById(id));
+    }
 
 
 }

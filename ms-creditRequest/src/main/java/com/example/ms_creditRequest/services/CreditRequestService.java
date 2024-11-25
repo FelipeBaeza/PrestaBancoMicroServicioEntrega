@@ -1,5 +1,7 @@
 package com.example.ms_creditRequest.services;
 
+import com.example.ms_creditRequest.clients.ClientsFeignClient;
+import com.example.ms_creditRequest.entities.ClientEntity;
 import com.example.ms_creditRequest.entities.CreditRequestEntity;
 import com.example.ms_creditRequest.repositories.CreditRequestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +19,7 @@ public class CreditRequestService {
     private CreditRequestRepository creditRequestRepository;
 
     @Autowired
-    private ClientRepository clientRepository;
+    private ClientsFeignClient clientsFeignClient;
 
 
     /**
@@ -52,7 +54,7 @@ public class CreditRequestService {
         }
 
         CreditRequestEntity creditClient = new CreditRequestEntity();
-        Optional<ClientEntity> clientOpt = clientRepository.findByRut(rut);
+        Optional<ClientEntity> clientOpt = Optional.ofNullable(clientsFeignClient.findClientByrut(rut));
         if (clientOpt.isPresent()) {
             ClientEntity client = clientOpt.get();
             creditClient.setTypeLoan(typeLoan);
@@ -79,7 +81,7 @@ public class CreditRequestService {
             }
 
             // Actualiza el cliente en la base de datos
-            clientRepository.save(client);
+            clientsFeignClient.updateClient(client);
 
             return creditClient;
         }
@@ -113,7 +115,7 @@ public class CreditRequestService {
         if (proofIncome.isEmpty() || creditHistory.isEmpty() || appraisalCertificate.isEmpty() || propertyWriting.isEmpty() || bankAccountState.isEmpty() || workCertificate.isEmpty()) {
             throw new IllegalArgumentException("All documents must be provided");
         }
-        Optional<ClientEntity> clientOpt = clientRepository.findByRut(rut);
+        Optional<ClientEntity> clientOpt = Optional.ofNullable(clientsFeignClient.findClientByrut(rut));
         if (clientOpt.isPresent()) {
             ClientEntity client = clientOpt.get();
             CreditRequestEntity creditClient = new CreditRequestEntity();
@@ -139,7 +141,7 @@ public class CreditRequestService {
                 client.setListRequestId(existingListRequestId + "-" + newId);
             }
 
-            clientRepository.save(client);
+            clientsFeignClient.updateClient(client);
 
             return creditClient;
         }
@@ -172,7 +174,7 @@ public class CreditRequestService {
         if (proofIncome.isEmpty() || appraisalCertificate.isEmpty() || businessFinancialStatement.isEmpty() || businessPlan.isEmpty() || bankAccountState.isEmpty() || workCertificate.isEmpty()) {
             throw new IllegalArgumentException("All documents must be provided");
         }
-        Optional<ClientEntity> clientOpt = clientRepository.findByRut(rut);
+        Optional<ClientEntity> clientOpt = Optional.ofNullable(clientsFeignClient.findClientByrut(rut));
         if (clientOpt.isPresent()) {
             ClientEntity client = clientOpt.get();
             CreditRequestEntity creditClient = new CreditRequestEntity();
@@ -198,7 +200,7 @@ public class CreditRequestService {
                 client.setListRequestId(existingListRequestId + "-" + newId);
             }
 
-            clientRepository.save(client);
+            clientsFeignClient.updateClient(client);
 
             return creditClient;
         }
@@ -231,7 +233,7 @@ public class CreditRequestService {
         if (proofIncome.isEmpty() || appraisalCertificate.isEmpty() || remodelingBudget.isEmpty() || bankAccountState.isEmpty() || workCertificate.isEmpty()) {
             throw new IllegalArgumentException("All documents must be provided");
         }
-        Optional<ClientEntity> clientOpt = clientRepository.findByRut(rut);
+        Optional<ClientEntity> clientOpt = Optional.ofNullable(clientsFeignClient.findClientByrut(rut));
         if (clientOpt.isPresent()) {
             ClientEntity client = clientOpt.get();
             CreditRequestEntity creditClient = new CreditRequestEntity();
@@ -256,7 +258,7 @@ public class CreditRequestService {
                 client.setListRequestId(existingListRequestId + "-" + newId);
             }
 
-            clientRepository.save(client);
+            clientsFeignClient.updateClient(client);
 
             return creditClient;
         }
@@ -269,7 +271,7 @@ public class CreditRequestService {
      * @return a list with the information of the clients
      */
     public List<Map<String, Object>> getClientsWithCreditStatus() {
-        List<ClientEntity> clients = clientRepository.findAll();
+        List<ClientEntity> clients = clientsFeignClient.allClients();
         List<Map<String, Object>> clientsWithCreditStatus = new ArrayList<>();
 
         for (ClientEntity client : clients) {
@@ -420,5 +422,9 @@ public class CreditRequestService {
         }
         creditRequestRepository.deleteById(id);
         return true;
+    }
+
+    public CreditRequestEntity findRequestById(Long id) {
+        return creditRequestRepository.findById(id).orElse(null);
     }
 }

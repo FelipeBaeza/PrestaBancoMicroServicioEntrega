@@ -37,4 +37,12 @@ public class ClientService {
         return clientRepository.findAll();
     }
 
+
+    public ClientEntity findClientByRut(String rut) {
+        return clientRepository.findByRut(rut).orElse(null);
+    }
+
+    public ClientEntity updateClient(ClientEntity client) {
+        return clientRepository.save(client);
+    }
 }

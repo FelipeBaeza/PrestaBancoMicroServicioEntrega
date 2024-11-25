@@ -38,4 +38,14 @@ public class ClientController {
         return ResponseEntity.ok(clientService.allClients());
     }
 
+    @GetMapping("/findClientByrut/{rut}")
+    public ResponseEntity<?> findClientByrut(@PathVariable String rut) {
+        return ResponseEntity.ok(clientService.findClientByRut(rut));
+    }
+
+    @PutMapping("/updateClient")
+    public ResponseEntity<?> updateClient(@RequestBody ClientEntity client) {
+        return ResponseEntity.ok(clientService.updateClient(client));
+    }
+
 }

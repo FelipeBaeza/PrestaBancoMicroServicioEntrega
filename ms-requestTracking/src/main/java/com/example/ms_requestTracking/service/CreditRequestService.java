@@ -1,5 +1,10 @@
 package com.example.ms_requestTracking.service;
 
+import com.example.ms_requestTracking.clients.ClientsFeignClient;
+import com.example.ms_requestTracking.clients.CreditRequestFeignClient;
+import com.example.ms_requestTracking.configurations.FeignClientConfig;
+import com.example.ms_requestTracking.entities.ClientEntity;
+import com.example.ms_requestTracking.entities.CreditRequestEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +16,10 @@ import java.util.Optional;
 public class CreditRequestService {
 
     @Autowired
-    private ClientRepository clientRepository;
+    private ClientsFeignClient clientsFeignClient;
 
     @Autowired
-    private CreditRequestRepository creditRequestRepository;
+    private CreditRequestFeignClient creditRequestFeignClient;
 
 
     /**
@@ -23,7 +28,7 @@ public class CreditRequestService {
      * @return the status of the request
      */
     public List<String> statusRequestClient(String rut) {
-        Optional<ClientEntity> clientOpt = clientRepository.findByRut(rut);
+        Optional<ClientEntity> clientOpt = Optional.ofNullable(clientsFeignClient.findClientByrut(rut));
         if (clientOpt.isPresent()) {
             ClientEntity client = clientOpt.get();
             String listRequestId = client.getListRequestId();
@@ -34,7 +39,7 @@ public class CreditRequestService {
             List<String> statusList = new ArrayList<>();
 
             for (String id : listRequestIdArray) {
-                Optional<CreditRequestEntity> creditRequest = creditRequestRepository.findById(Long.parseLong(id));
+                Optional<CreditRequestEntity> creditRequest = Optional.ofNullable(creditRequestFeignClient.findRequestById(Long.parseLong(id)));
                 creditRequest.ifPresent(creditRequestEntity -> statusList.add(creditRequestEntity.getStateRequest()));
                 creditRequest.ifPresent(creditRequestEntity -> statusList.add(creditRequestEntity.getId().toString()));
             }
