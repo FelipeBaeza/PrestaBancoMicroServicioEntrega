@@ -2,7 +2,7 @@ server:
   port: 8093
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ms-creditRequest
+    url: jdbc:postgresql://localhost:5435/ms-creditRequest
     username: postgres
     password: felipeb222
 eureka:
