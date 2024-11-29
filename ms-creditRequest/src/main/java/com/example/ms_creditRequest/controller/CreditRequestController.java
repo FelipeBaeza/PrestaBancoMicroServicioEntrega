@@ -194,5 +194,8 @@ public class CreditRequestController {
         return ResponseEntity.ok(creditRequestService.findRequestById(id));
     }
 
-
+    @GetMapping("/findById/{id}")
+    public ResponseEntity<?> findById(@PathVariable Long id) {
+        return ResponseEntity.ok(creditRequestService.findById(id));
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.ms_creditRequest.configurations;
+package com.example.ms_totalCosts.configurations;
 
 import feign.Logger;
 import org.springframework.context.annotation.Bean;

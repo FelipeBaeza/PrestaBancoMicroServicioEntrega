@@ -1,5 +1,6 @@
 package com.example.ms_creditEvaluation.service;
 
+import com.example.ms_creditEvaluation.clients.CreditRequestFeignClient;
 import com.example.ms_creditEvaluation.entities.CreditEvaluationEntity;
 import com.example.ms_creditEvaluation.repositories.CreditEvaluationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class CreditEvaluationService {
     private CreditEvaluationRepository creditEvaluationRepository;
 
     @Autowired
-    private CreditRequestService creditRequestService;
+    private CreditRequestFeignClient creditRequestService;
 
 
 

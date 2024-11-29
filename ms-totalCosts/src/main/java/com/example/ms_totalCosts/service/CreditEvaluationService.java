@@ -1,5 +1,8 @@
 package com.example.ms_totalCosts.service;
 
+import com.example.ms_totalCosts.clients.CreditRequestFeignClient;
+import com.example.ms_totalCosts.clients.SimulationFeignClient;
+import com.example.ms_totalCosts.entitites.CreditRequestEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,10 +10,10 @@ import org.springframework.stereotype.Service;
 public class CreditEvaluationService {
 
     @Autowired
-    private CreditRequestService creditRequestService;
+    private CreditRequestFeignClient creditRequestService;
 
     @Autowired
-    private ClientService clientService;
+    private SimulationFeignClient clientService;
 
     public int calculateTotalCosts(Long id) {
         // Step 1: Calculate Monthly Payment
