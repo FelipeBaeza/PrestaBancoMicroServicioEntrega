@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/clients-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/config-server-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/creditEvaluation-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/creditRequest-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/eureka-server-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/gateway-server-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/ms-clients-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/ms-creditEvaluation-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/ms-creditRequest-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/ms-requestTracking-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/ms-simulation-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/ms-totalCosts-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/postgres-config-map.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/postgres-secrets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/requestTracking-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/simulation-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/totalCosts-db-deployment-service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/ms-clients.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-clients.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/ms-creditEvaluation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-creditEvaluation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/ms-creditRequest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-creditRequest.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/ms-requestTracking.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-requestTracking.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/ms-simulation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-simulation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/ms-totalCosts.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-totalCosts.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-clients/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/eureka-server.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/eureka-server.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/creditEvaluation-db-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/creditEvaluation-db-deployment-service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +102,7 @@
       <workItem from="1732077113351" duration="1114000" />
       <workItem from="1733002696250" duration="890000" />
       <workItem from="1733237433043" duration="5269000" />
-      <workItem from="1733247255005" duration="13073000" />
+      <workItem from="1733247255005" duration="14757000" />
     </task>
     <servers />
   </component>
