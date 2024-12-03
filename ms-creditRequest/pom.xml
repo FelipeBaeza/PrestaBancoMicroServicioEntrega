@@ -81,6 +81,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>ms-creditRequest</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

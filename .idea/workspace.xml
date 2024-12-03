@@ -5,16 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/entities/ClientEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-requestTracking/src/main/java/com/example/ms_requestTracking/entities/ClientEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-requestTracking/src/main/java/com/example/ms_requestTracking/entities/CreditRequestEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/services/CreditRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-creditRequest/src/main/java/com/example/ms_creditRequest/services/CreditRequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-requestTracking/src/main/java/com/example/ms_requestTracking/service/CreditRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-requestTracking/src/main/java/com/example/ms_requestTracking/service/CreditRequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/example/config_server/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/example/config_server/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditEvaluation/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-creditRequest/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-requestTracking/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-simulation/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-totalCosts/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/config-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/src/main/java/com/example/config_server/ConfigServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/config-server/src/test/java/com/example/config_server/ConfigServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-creditEvaluation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-creditEvaluation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-creditRequest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-creditRequest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-requestTracking/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-requestTracking/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-simulation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-simulation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-totalCosts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-totalCosts/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,6 +129,7 @@
       <workItem from="1731986101035" duration="2129000" />
       <workItem from="1732037220860" duration="8993000" />
       <workItem from="1732077113351" duration="1114000" />
+      <workItem from="1733002696250" duration="890000" />
     </task>
     <servers />
   </component>
