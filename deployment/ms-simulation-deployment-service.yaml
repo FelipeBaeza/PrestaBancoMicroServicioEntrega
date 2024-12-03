@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-simulation-deployment
+  labels:
+    app: ms-simulation-deployment
+spec:
+  selector:
+    matchLabels:
+        app: ms-simulation-pod
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ms-simulation-pod
+    spec:
+        containers:
+            - name: ms-simulation
+              image: felipeb2001/ms-simulation
+              ports:
+                - containerPort: 8090
+              env:
+                - name: SERVER_PORT
+                  value: "8090"
+                - name: DB_HOST
+                  valueFrom:
+                    configMapKeyRef:
+                      name: postgres-config-map
+                      key: DB_HOST_SIMULATION
+                - name: DB_PORT
+                  valueFrom:
+                    configMapKeyRef:
+                      name: postgres-config-map
+                      key: DB_PORT_SIMULATION
+                - name: DB_NAME
+                  valueFrom:
+                    configMapKeyRef:
+                      name: postgres-config-map
+                      key: DB_NAME_SIMULATION
+                - name: DB_USER
+                  valueFrom:
+                    secretKeyRef:
+                      name: postgres-credentials
+                      key: DB_USER
+                - name: DB_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: postgres-credentials
+                      key: DB_PASSWORD
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-simulation-service
+  labels:
+    app: ms-simulation-service
+spec:
+    selector:
+        app: ms-simulation-pod
+    ports:
+        - protocol: TCP
+          port: 8090
+          targetPort: 8090
+    type: LoadBalancer

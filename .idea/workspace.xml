@@ -5,50 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config-server/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/example/config_server/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/example/config_server/ConfigServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-clients/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-creditEvaluation/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-creditRequest/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-requestTracking/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-simulation/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-totalCosts/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/config-server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/src/main/java/com/example/config_server/ConfigServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/config-server/src/test/java/com/example/config_server/ConfigServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-creditEvaluation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-creditEvaluation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-creditRequest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-creditRequest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-requestTracking/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-requestTracking/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-simulation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-simulation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-totalCosts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-totalCosts/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/clients-db-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/config-server-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/creditEvaluation-db-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/creditRequest-db-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/eureka-server-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/gateway-server-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ms-clients-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ms-creditEvaluation-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ms-creditRequest-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ms-requestTracking-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ms-simulation-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/ms-totalCosts-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/postgres-config-map.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/postgres-secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/requestTracking-db-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/simulation-db-deployment-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/totalCosts-db-deployment-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-clients.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-clients.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-creditEvaluation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-creditEvaluation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-creditRequest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-creditRequest.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-requestTracking.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-requestTracking.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-simulation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-simulation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/ms-totalCosts.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/ms-totalCosts.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +47,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/deployment/postgres-config-map.yaml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -79,24 +67,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/config-server&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\baeza\OneDrive\Documentos\GitHub\PrestaBancoMicroServicioEntrega\config-data" />
@@ -130,6 +124,8 @@
       <workItem from="1732037220860" duration="8993000" />
       <workItem from="1732077113351" duration="1114000" />
       <workItem from="1733002696250" duration="890000" />
+      <workItem from="1733237433043" duration="5269000" />
+      <workItem from="1733247255005" duration="13073000" />
     </task>
     <servers />
   </component>

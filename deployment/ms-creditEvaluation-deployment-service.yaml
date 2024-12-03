@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-creditEvaluation-deployment
+  labels:
+    app: ms-creditEvaluation-deployment
+spec:
+  selector:
+    matchLabels:
+        app: ms-creditEvaluation-pod
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ms-creditEvaluation-pod
+    spec:
+        containers:
+            - name: ms-creditEvaluation
+              image: felipeb2001/ms-creditevaluation
+              ports:
+                - containerPort: 8092
+              env:
+                - name: SERVER_PORT
+                  value: "8092"
+                - name: DB_HOST
+                  valueFrom:
+                    configMapKeyRef:
+                      name: postgres-config-map
+                      key: DB_HOST_CREDIT_EVALUATION
+                - name: DB_PORT
+                  valueFrom:
+                    configMapKeyRef:
+                      name: postgres-config-map
+                      key: DB_PORT_CREDIT_EVALUATION
+                - name: DB_NAME
+                  valueFrom:
+                    configMapKeyRef:
+                      name: postgres-config-map
+                      key: DB_NAME_CREDIT_EVALUATION
+                - name: DB_USER
+                  valueFrom:
+                    secretKeyRef:
+                      name: postgres-credentials
+                      key: DB_USER
+                - name: DB_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: postgres-credentials
+                      key: DB_PASSWORD
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-creditEvaluation-service
+  labels:
+    app: ms-creditEvaluation-service
+spec:
+    selector:
+        app: ms-creditEvaluation-pod
+    ports:
+        - protocol: TCP
+          port: 8092
+          targetPort: 8092
+    type: LoadBalancer

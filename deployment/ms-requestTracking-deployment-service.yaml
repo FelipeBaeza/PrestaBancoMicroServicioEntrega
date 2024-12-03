@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-requestTracking-deployment
+  labels:
+    app: ms-requestTracking-deployment
+spec:
+  selector:
+    matchLabels:
+      app: ms-requestTracking-pod
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ms-requestTracking-pod
+    spec:
+      containers:
+        - name: ms-requestTracking
+          image: felipeb2001/ms-requesttracking
+          ports:
+            - containerPort: 8094
+          env:
+            - name: SERVER_PORT
+              value: "8094"
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config-map
+                  key: DB_HOST_REQUEST_TRACKING
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config-map
+                  key: DB_PORT_REQUEST_TRACKING
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config-map
+                  key: DB_NAME_REQUEST_TRACKING
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials
+                  key: DB_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials
+                  key: DB_PASSWORD
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-requestTracking-service
+  labels:
+    app: ms-requestTracking-service
+spec:
+    selector:
+        app: ms-requestTracking-pod
+    ports:
+      - protocol: TCP
+        port: 8094
+        targetPort: 8094
+    type: LoadBalancer

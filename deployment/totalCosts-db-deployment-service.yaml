@@ -1,0 +1,90 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: total-costs-db-pv
+  labels:
+    type: local
+spec:
+    storageClassName: standard
+    capacity:
+        storage: 1Gi
+    accessModes:
+        - ReadWriteOnce
+    hostPath:
+      path: "/data/total-costs-db-data"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: total-costs-db-pvc
+  labels:
+    app: postgres
+    tier: database
+spec:
+    storageClassName: standard
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        requests:
+            storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: total-costs-db-deployment
+  labels:
+    app: total-costs-db-deployment
+    tier: database
+spec:
+    selector:
+      matchLabels:
+        app: total-costs-db-deployment
+    strategy:
+        type: Recreate
+    template:
+      metadata:
+        labels:
+            app: total-costs-db-deployment
+            tier: database
+      spec:
+        containers:
+        - name: total-costs-db
+          image: postgres
+          imagePullPolicy: "IfNotPresent"
+          ports:
+          - containerPort: 5432
+          env:
+          - name: POSTGRES_USER
+            valueFrom:
+              secretKeyRef:
+                name: postgres-credentials
+                key: DB_USER
+          - name: POSTGRES_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: postgres-credentials
+                key: DB_PASSWORD
+          volumeMounts:
+            - mountPath: "/var/lib/postgresql/data"
+              name: total-costs-db-data
+        volumes:
+          - name: total-costs-db-data
+            persistentVolumeClaim:
+              claimName: total-costs-db-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: total-costs-db-service
+  labels:
+    app: total-costs-db-service
+    tier: database
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+      protocol: TCP
+  selector:
+    app: total-costs-db-deployment
+    tier: database
+    type: LoadBalancer
