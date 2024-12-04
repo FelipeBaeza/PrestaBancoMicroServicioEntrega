@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c5a7dae0-42a8-4a73-9c8e-ca4dd3b0eee3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c5a7dae0-42a8-4a73-9c8e-ca4dd3b0eee3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/gateway-server.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/gateway-server.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/gateway-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,6 +103,8 @@
       <workItem from="1733002696250" duration="890000" />
       <workItem from="1733237433043" duration="5269000" />
       <workItem from="1733247255005" duration="15732000" />
+      <workItem from="1733273087945" duration="29000" />
+      <workItem from="1733273745440" duration="2725000" />
     </task>
     <servers />
   </component>
