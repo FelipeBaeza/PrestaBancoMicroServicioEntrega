@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/gateway-server.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/gateway-server.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/config-server-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/config-server-deployment-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/eureka-server-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/eureka-server-deployment-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/gateway-server-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/gateway-server-deployment-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega",
+    "last_opened_file_path": "C:/Users/baeza/Downloads/Microservicios (version 2)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,7 +109,8 @@
       <workItem from="1733322858361" duration="782000" />
       <workItem from="1733367511056" duration="37000" />
       <workItem from="1733369285642" duration="6832000" />
-      <workItem from="1733415982547" duration="1079000" />
+      <workItem from="1733415982547" duration="2564000" />
+      <workItem from="1733433265250" duration="1423000" />
     </task>
     <servers />
   </component>
