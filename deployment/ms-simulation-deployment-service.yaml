@@ -14,11 +14,26 @@ spec:
       labels:
         app: ms-simulation-deployment
     spec:
-        containers:
-          - name: ms-simulation
-            image: felipeb2001/ms-simulation
-            ports:
-                - containerPort: 8090
-            env:
-                - name: SERVER_PORT
-                  value: "0"
+      containers:
+        - name: ms-simulation
+          image: felipeb2001/ms-simulation
+          ports:
+            - containerPort: 8090
+          env:
+            - name: SERVER_PORT
+              value: "8090"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ms-simulation-service
+  labels:
+    app: ms-simulation-service
+spec:
+  selector:
+    app: ms-simulation-pod
+  ports:
+    - protocol: TCP
+      port: 8090
+      targetPort: 8090
+  type: LoadBalancer

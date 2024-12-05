@@ -22,7 +22,7 @@ spring:
             allowedHeaders: "*"
       routes:
         - id: ms-simulation
-          uri: lb://ms-simulation
+          uri: lb://ms-simulation:8090
           predicates:
             - Path=/api/v1/simulation/**
         - id: ms-clients
