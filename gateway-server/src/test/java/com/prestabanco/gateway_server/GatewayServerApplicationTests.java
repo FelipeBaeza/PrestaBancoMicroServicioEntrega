@@ -1,4 +1,4 @@
-package com.example.gateway_server;
+package com.prestabanco.gateway_server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

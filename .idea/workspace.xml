@@ -6,7 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ms-clients-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/ms-clients-deployment-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/ms-simulation-deployment-service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/postgres-config-map.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/postgres-config-map.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/com/example/gateway_server/GatewayServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/src/test/java/com/example/gateway_server/GatewayServerApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +69,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/Downloads/Microservicios (version 2)",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/ms-clients",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,6 +127,11 @@
       <workItem from="1733369285642" duration="6832000" />
       <workItem from="1733415982547" duration="2564000" />
       <workItem from="1733433265250" duration="1423000" />
+      <workItem from="1733438087513" duration="328000" />
+      <workItem from="1733445678481" duration="400000" />
+      <workItem from="1733448292880" duration="544000" />
+      <workItem from="1733450948115" duration="1956000" />
+      <workItem from="1733453979664" duration="2138000" />
     </task>
     <servers />
   </component>
