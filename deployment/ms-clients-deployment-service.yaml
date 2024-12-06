@@ -7,43 +7,43 @@ metadata:
 spec:
   selector:
     matchLabels:
-        app: ms-clients-deployment
+      app: ms-clients-deployment
   replicas: 1
   template:
     metadata:
       labels:
         app: ms-clients-deployment
     spec:
-        containers:
-            - name: ms-clients
-              image: felipeb2001/ms-clients
-              ports:
-                - containerPort: 8091
-              env:
-                - name: SERVER_PORT
-                  value: "0"
-                - name: DB_HOST
-                  valueFrom:
-                    configMapKeyRef:
-                      name: postgres-config-map
-                      key: DB_HOST_CLIENTS
-                - name: DB_PORT
-                  valueFrom:
-                    configMapKeyRef:
-                      name: postgres-config-map
-                      key: DB_PORT_CLIENTS
-                - name: DB_NAME
-                  valueFrom:
-                    configMapKeyRef:
-                      name: postgres-config-map
-                      key: DB_NAME_CLIENTS
-                - name: DB_USER
-                  valueFrom:
-                    secretKeyRef:
-                      name: postgres-secret
-                      key: DB_USER
-                - name: DB_PASSWORD
-                  valueFrom:
-                    secretKeyRef:
-                      name: postgres-secret
-                      key: DB_PASSWORD
+      containers:
+        - name: ms-clients
+          image: felipeb2001/ms-clients
+          ports:
+            - containerPort: 8091
+          env:
+            - name: SERVER_PORT
+              value: "0"
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config-map
+                  key: DB_HOST_CLIENTS
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config-map
+                  key: DB_PORT_CLIENTS
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-config-map
+                  key: DB_NAME_CLIENTS
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: DB_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: DB_PASSWORD

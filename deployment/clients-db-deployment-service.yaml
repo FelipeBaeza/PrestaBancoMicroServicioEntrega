@@ -12,6 +12,7 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: "/data/clients-db-data"
+
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -21,12 +22,13 @@ metadata:
     app: postgres
     tier: database
 spec:
-    storageClassName: standard
-    accessModes:
-        - ReadWriteOnce
-    resources:
-        requests:
-            storage: 1Gi
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -48,29 +50,30 @@ spec:
         tier: database
     spec:
       containers:
-      - name: clients-db
-        image: postgres
-        imagePullPolicy: "IfNotPresent"
-        ports:
-        - containerPort: 5432
-        env:
-        - name: POSTGRES_USER
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: DB_USER
-        - name: POSTGRES_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: DB_PASSWORD
-        volumeMounts:
-          - mountPath: "/var/lib/postgresql/data"
-            name: clients-db-data
+        - name: clients-db
+          image: postgres
+          imagePullPolicy: "IfNotPresent"
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: DB_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: DB_PASSWORD
+          volumeMounts:
+            - name: clients-db-storage
+              mountPath: /var/lib/postgresql/data
       volumes:
-          - name: clients-db-data
-            persistentVolumeClaim:
-              claimName: clients-db-pvc
+        - name: clients-db-storage
+          persistentVolumeClaim:
+            claimName: clients-db-pvc
+
 ---
 apiVersion: v1
 kind: Service
@@ -87,5 +90,4 @@ spec:
   selector:
     app: clients-db-deployment
     tier: database
-    type: LoadBalancer
-
+  type: LoadBalancer
