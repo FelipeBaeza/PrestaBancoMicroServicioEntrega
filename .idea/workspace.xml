@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c70d3ffd-26ca-4e5e-9cb6-ab5ef8631dde" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/deployment/clients-db-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/clients-db-deployment-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-data/gateway-server.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/gateway-server.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/example/config_server/ConfigServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/com/example/config_server/ConfigServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eureka_server/EurekaServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eureka_server/EurekaServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +65,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega/ms-clients",
+    "last_opened_file_path": "C:/Users/baeza/OneDrive/Documentos/GitHub/PrestaBancoMicroServicioEntrega",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,6 +131,7 @@
       <workItem from="1733453979664" duration="2138000" />
       <workItem from="1733456387733" duration="8321000" />
       <workItem from="1733495269325" duration="49000" />
+      <workItem from="1733512570087" duration="377000" />
     </task>
     <servers />
   </component>
