@@ -5,13 +5,12 @@ metadata:
   labels:
     app: postgres-config-map
 data:
-    DB_HOST_CLIENTS: clients-db-service
-    DB_PORT_CLIENTS: "5435"
-    DB_NAME_CLIENTS: ms_clients
-    DB_HOST_CREDIT_EVALUATION: creditEvaluation-db-service
-    DB_PORT_CREDIT_EVALUATION: "5435"
-    DB_NAME_CREDIT_EVALUATION: ms_credit_evaluation
-    DB_HOST_CREDIT_REQUEST: creditRequest-db-service
-    DB_PORT_CREDIT_REQUEST: "5435"
-    DB_NAME_CREDIT_REQUEST: ms_credit_request
-
+  DB_HOST_CLIENTS: clients-db-service
+  DB_PORT_CLIENTS: "5432"
+  DB_NAME_CLIENTS: ms_clients
+  DB_HOST_CREDIT_EVALUATION: creditEvaluation-db-service
+  DB_PORT_CREDIT_EVALUATION: "5432"
+  DB_NAME_CREDIT_EVALUATION: ms_credit_evaluation
+  DB_HOST_CREDIT_REQUEST: creditRequest-db-service
+  DB_PORT_CREDIT_REQUEST: "5432"
+  DB_NAME_CREDIT_REQUEST: ms_credit_request
