@@ -1,6 +1,8 @@
 server:
   port: 8080
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -12,8 +14,6 @@ spring:
       discovery:
         locator:
           enabled: true
-        default-filters:
-          - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
       globalcors:
         cors-configurations:
           '[/**]':
@@ -25,8 +25,23 @@ spring:
           uri: lb://ms-simulation
           predicates:
             - Path=/api/v1/simulation/**
-        - id: ms-clients
-          uri: lb://ms-clients
+        - id: ms-users
+          uri: lb://ms-users
           predicates:
             - Path=/api/v1/clients/**
-
+        - id: ms-request
+          uri: lb://ms-request
+          predicates:
+            - Path=/api/v1/request/**
+        - id: ms-evaluation
+          uri: lb://ms-evaluation
+          predicates:
+            - Path=/api/v1/evaluation/**
+        - id: ms-tracking
+          uri: lb://ms-tracking
+          predicates:
+            - Path=/api/v1/tracking/**
+        - id: ms-totalcost
+          uri: lb://ms-totalcost
+          predicates:
+            - Path=/api/v1/totalcost/**
