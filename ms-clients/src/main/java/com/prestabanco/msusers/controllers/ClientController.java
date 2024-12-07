@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-// REMEMBER: CONTROLLER CONNECT WITH SERVICE LAYER
+
 
 @RestController // json file
 @RequestMapping("/api/v1/clients")

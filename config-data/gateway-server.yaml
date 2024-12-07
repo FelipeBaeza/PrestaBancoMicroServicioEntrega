@@ -25,8 +25,8 @@ spring:
           uri: lb://ms-simulation
           predicates:
             - Path=/api/v1/simulation/**
-        - id: ms-users
-          uri: lb://ms-users
+        - id: ms-clients
+          uri: lb://ms-clients
           predicates:
             - Path=/api/v1/clients/**
         - id: ms-request

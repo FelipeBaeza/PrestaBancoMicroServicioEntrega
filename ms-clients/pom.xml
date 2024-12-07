@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.prestabanco</groupId>
-	<artifactId>ms-users</artifactId>
+	<artifactId>ms-clients</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-users</name>
+	<name>ms-clients</name>
 	<description>microservicio que realiza la gestión de usuarios</description>
 	<properties>
 		<java.version>17</java.version>
