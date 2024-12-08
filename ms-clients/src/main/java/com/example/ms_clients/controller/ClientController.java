@@ -1,30 +1,32 @@
-package com.prestabanco.msusers.controllers;
+package com.example.ms_clients.controller;
 
-import com.prestabanco.msusers.entities.ClientEntity;
-import com.prestabanco.msusers.services.ClientService;
+
+
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
-
-
-
-@RestController // json file
+@RestController
 @RequestMapping("/api/v1/clients")
 public class ClientController {
 
-    @Autowired // spring injection
-    ClientService clientService;
+    @Autowired
+    private ClientService clientService;
+
+    /**
+     * Saves a new client.
+     *
+     * @param client the client entity to be saved
+     * @return the saved client entity
+     */
 
     @PostMapping("/save")
     public ResponseEntity<?> saveClient(@RequestBody ClientEntity client) {
         ClientEntity clientNew = clientService.saveClient(client);
         return ResponseEntity.ok(clientNew);
     }
-
+    
 
     @GetMapping("/validateRutAndPassword/{rut}/{password}")
     public ResponseEntity<?> validateRutAndPassword(@PathVariable String rut, @PathVariable String password) {

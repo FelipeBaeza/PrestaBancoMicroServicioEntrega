@@ -7,7 +7,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://eureka-server-service:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 spring:
   cloud:
     gateway:
@@ -22,26 +22,26 @@ spring:
             allowedHeaders: "*"
       routes:
         - id: ms-simulation
-          uri: lb://ms-simulation
+          uri: lb://ms-simulation/8093
           predicates:
             - Path=/api/v1/simulation/**
         - id: ms-clients
-          uri: lb://ms-clients
+          uri: lb://ms-clients/8090
           predicates:
             - Path=/api/v1/clients/**
-        - id: ms-request
+        - id: ms-request/8092
           uri: lb://ms-request
           predicates:
             - Path=/api/v1/request/**
         - id: ms-evaluation
-          uri: lb://ms-evaluation
+          uri: lb://ms-evaluation/8091
           predicates:
             - Path=/api/v1/evaluation/**
         - id: ms-tracking
-          uri: lb://ms-tracking
+          uri: lb://ms-tracking/8095
           predicates:
             - Path=/api/v1/tracking/**
         - id: ms-totalcost
-          uri: lb://ms-totalcost
+          uri: lb://ms-totalcost/8094
           predicates:
             - Path=/api/v1/totalcost/**

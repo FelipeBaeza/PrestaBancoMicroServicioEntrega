@@ -1,10 +1,10 @@
-package com.prestabanco.ms_users;
+package com.example.ms_clients;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsUsersApplicationTests {
+class MsClientsApplicationTests {
 
 	@Test
 	void contextLoads() {
