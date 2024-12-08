@@ -5,9 +5,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/ms-clients
     username: postgres
     password: felipeb222
-  jpa:
-    hibernate:
-      ddl-auto: update
 eureka:
   instance:
     hostname: localhost
