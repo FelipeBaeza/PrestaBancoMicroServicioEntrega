@@ -14,7 +14,6 @@ public interface ClientsFeignClient {
     @GetMapping("/findClientByrut/{rut}")
     ClientEntity findClientByrut(@PathVariable String rut);
 
-
     @PutMapping("/updateClient")
     ClientEntity updateClient(@RequestBody ClientEntity client);
 
