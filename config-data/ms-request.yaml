@@ -2,7 +2,7 @@ server:
   port: 8092
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ms-reqyest
+    url: jdbc:postgresql://localhost:5432/ms-request
     username: postgres
     password: felipeb222
   jpa:
