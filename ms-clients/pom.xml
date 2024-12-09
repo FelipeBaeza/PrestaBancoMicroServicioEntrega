@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>prestaBanco</artifactId>
+	<artifactId>ms-clients</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>prestaBanco</name>
+	<name>ms-clients</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

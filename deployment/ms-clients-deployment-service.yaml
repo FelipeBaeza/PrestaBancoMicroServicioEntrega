@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: ms-clients
-          image: felipeb2001/ms-clients
+          image: felipeb2001/ms-clients:latest
           ports:
             - containerPort: 8091
           env:
