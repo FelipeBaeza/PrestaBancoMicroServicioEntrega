@@ -1,19 +1,15 @@
 server:
-  port: 0
+  port: ${SERVER_PORT}
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/evaluation
-    username: postgres
-    password: felipeb222
-  jpa:
-    hibernate:
-      ddl-auto: update
-
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_DBNAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
 eureka:
   instance:
-    hostname: localhost
+    preferIpAddress: true
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-server-service:8761/eureka/
