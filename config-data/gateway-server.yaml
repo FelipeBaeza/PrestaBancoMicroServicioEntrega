@@ -1,6 +1,8 @@
 server:
   port: 8080
 eureka:
+  instance:
+    preferIpAddress: true
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -12,8 +14,6 @@ spring:
       discovery:
         locator:
           enabled: true
-        default-filters:
-          - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
       globalcors:
         cors-configurations:
           '[/**]':
@@ -32,7 +32,7 @@ spring:
         - id: ms-request
           uri: lb://ms-request
           predicates:
-            - Path=/api/v1/request/**
+            - Path=/api/v1/request/**,/api/v1/LoanType/**
         - id: ms-evaluation
           uri: lb://ms-evaluation
           predicates:
