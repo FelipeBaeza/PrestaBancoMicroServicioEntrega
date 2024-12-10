@@ -5,27 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.5</version>
+		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>ms-clients</artifactId>
+	<groupId>com.mingeso</groupId>
+	<artifactId>ms-clients1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-clients</name>
-	<description>Demo project for Spring Boot</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+	<name>ms-orders</name>
+	<description>Microservicio productos</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

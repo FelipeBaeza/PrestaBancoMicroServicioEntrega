@@ -18,7 +18,7 @@ spec:
         - name: ms-simulation
           image: felipeb2001/ms-simulation
           ports:
-            - containerPort: 8090
+            - containerPort: 8094
           env:
             - name: SERVER_PORT
               value: "0"

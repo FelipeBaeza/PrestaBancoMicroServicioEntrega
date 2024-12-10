@@ -12,7 +12,6 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: "/data/request-db-data"
-
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -28,7 +27,6 @@ spec:
   resources:
     requests:
       storage: 1Gi
-
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -38,6 +36,7 @@ metadata:
     app: request-db-deployment
     tier: database
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: request-db-deployment
@@ -59,21 +58,20 @@ spec:
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: DB_USER
+                  name: postgres-credentials
+                  key: DB_USER_CLIENTS
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: DB_PASSWORD
+                  name: postgres-credentials
+                  key: DB_PASSWORD_CLIENTS
           volumeMounts:
-            - name: request-db-storage
-              mountPath: /var/lib/postgresql/data
+            - mountPath: /var/lib/postgresql/data
+              name: request-db-data
       volumes:
-        - name: request-db-storage
+        - name: request-db-data
           persistentVolumeClaim:
             claimName: request-db-pvc
-
 ---
 apiVersion: v1
 kind: Service

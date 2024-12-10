@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: clients-db-pv
+  name: users-db-pv
   labels:
     type: local
 spec:
@@ -11,13 +11,12 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/data/clients-db-data"
-
+    path: "/data/users-db-data"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: clients-db-pvc
+  name: users-db-pvc
   labels:
     app: postgres
     tier: database
@@ -28,29 +27,29 @@ spec:
   resources:
     requests:
       storage: 1Gi
-
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: clients-db-deployment
+  name: users-db-deployment
   labels:
-    app: clients-db-deployment
+    app: users-db-deployment
     tier: database
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: clients-db-deployment
+      app: users-db-deployment
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: clients-db-deployment
+        app: users-db-deployment
         tier: database
     spec:
       containers:
-        - name: clients-db
+        - name: users-db
           image: postgres
           imagePullPolicy: "IfNotPresent"
           ports:
@@ -59,28 +58,27 @@ spec:
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: DB_USER
+                  name: postgres-credentials
+                  key: DB_USER_CLIENTS
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
-                  key: DB_PASSWORD
+                  name: postgres-credentials
+                  key: DB_PASSWORD_CLIENTS
           volumeMounts:
-            - name: clients-db-storage
-              mountPath: /var/lib/postgresql/data
+            - mountPath: /var/lib/postgresql/data
+              name: users-db-data
       volumes:
-        - name: clients-db-storage
+        - name: users-db-data
           persistentVolumeClaim:
-            claimName: clients-db-pvc
-
+            claimName: users-db-pvc
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: clients-db-service
+  name: users-db-service
   labels:
-    app: clients-db-service
+    app: users-db-service
     tier: database
 spec:
   ports:
@@ -88,6 +86,6 @@ spec:
       targetPort: 5432
       protocol: TCP
   selector:
-    app: clients-db-deployment
+    app: users-db-deployment
     tier: database
   type: LoadBalancer
