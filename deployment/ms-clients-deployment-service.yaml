@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ms-users-deployment
+  name: ms-clients-deployment
   labels:
-    app: ms-users-deployment
+    app: ms-clients-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ms-users-deployment
+      app: ms-clients-deployment
   template:
     metadata:
       labels:
-        app: ms-users-deployment
+        app: ms-clients-deployment
     spec:
       containers:
-        - name: ms-users
-          image: felipeb2001/ms-users
+        - name: ms-clients
+          image: felipeb2001/ms-clients
           ports:
             - containerPort: 8091
           env:
@@ -33,11 +33,11 @@ spec:
                 configMapKeyRef:
                   name: postgres-config-map
                   key: DB_PORT_CLIENTS
-            - name: DB_DBNAME
+            - name: DB_NAME
               valueFrom:
                 configMapKeyRef:
                   name: postgres-config-map
-                  key: DB_DBNAME_CLIENTS
+                  key: DB_NAME_CLIENTS
             - name: DB_USER
               valueFrom:
                 secretKeyRef:

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mingeso</groupId>
-	<artifactId>ms-clients1</artifactId>
+	<artifactId>ms-clients</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ms-orders</name>
 	<description>Microservicio productos</description>
