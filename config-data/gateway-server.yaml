@@ -28,7 +28,7 @@ spring:
         - id: ms-clients
           uri: lb://ms-clients
           predicates:
-            - Path=/api/v1/clients/**
+            - Path=/api/v1/users/**
         - id: ms-request
           uri: lb://ms-request
           predicates:
