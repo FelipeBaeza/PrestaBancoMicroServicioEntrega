@@ -14,7 +14,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/request")
-@CrossOrigin("*")
 public class CreditRequestController {
 
     @Autowired
@@ -163,12 +162,10 @@ public class CreditRequestController {
         return ResponseEntity.ok(creditRequestService.getRequest(id));
     }
 
-
     @PutMapping("/EditStatus/{id}/{state}")
     public ResponseEntity<?> editStatus(@PathVariable String state, @PathVariable Long id) {
         return ResponseEntity.ok(creditRequestService.editStatus(state, id));
     }
-
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteRequest(@PathVariable Long id) {
@@ -184,5 +181,4 @@ public class CreditRequestController {
     public ResponseEntity<?> findById(@PathVariable Long id) {
         return ResponseEntity.ok(creditRequestService.findById(id));
     }
-
 }
